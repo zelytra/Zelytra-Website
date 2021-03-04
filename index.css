@@ -1,0 +1,100 @@
+@font-face {
+    font-family: "Poppins";
+    src: url('Poppins-Thin.ttf') format('truetype');           
+   }
+* {
+    margin: 0;
+    padding: 0;   
+    font-family: "Poppins";     
+  }
+
+html, body{
+    height: 100%;
+    background-color: #2F2D2D;    
+}
+
+header{
+    background-color: #4B9EFE;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+
+.wrapper {       
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    overflow: auto;
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+}
+h1{    
+    color: white;
+    font-size: 36px;
+}
+svg{
+    background-color: #4B9EFE;
+    width: 75%;
+    height: 5px;
+}
+p{
+    font-size: 20px;
+    color: white;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+main #left-side{
+    overflow: show;
+    position: static;
+    min-width: 300px; 
+    margin-top: 50px;
+    margin-left: 25px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    background: #363333;
+    border-radius: 20px;
+    height: 400px;
+}
+
+#profil #profile_logo{      
+    width: 200px; 
+}
+#profil {
+    background-image: url("pictures/fond_profil.png");
+    width: 200px;
+    height: 150px; 
+}
+
+main #right-side{
+    margin-top: 50px;
+   margin-right: 15%;   
+   margin-left: 30px; 
+}
+
+img[alt*="logo_header"] {   
+    width: 45px; 
+    margin-right: 25px;  
+    margin-left: 25px;        
+    border-radius: 3px;
+
+}
+
+img[alt*="logo_header_center"] {   
+    width: 50px; 
+    margin-right: 100px;
+    margin-left: 100px;         
+    border-radius: 3px;
+
+}
+
+footer{
+    background-color: #3C3C3C;       
+    height: 150px;   
+}
