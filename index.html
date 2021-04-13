@@ -4,7 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#4B9EFE">
+    <meta name="description" content="Zelytra website">
+    <meta property="og:url" content="https://zelytra.fr">
+    <meta property="og:image" content="https://zelytra.fr/pictures/favicon.ico">
     <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="pictures/favicon.ico" />
     <title>Zelytra</title>
 </head>
 
@@ -22,38 +27,210 @@
 
         <main>
             <div id="left-side">
-                <div id="profil">                    
+                <div id="profil">
                     <img src="pictures/logo.png" id="profile_logo">
-                    <h1>{Zelyra}</h1>
+                    <h1>{Zelytra}</h1>
+                    <div id="social">
+                        <a href="https://github.com/zelytra" target="_blank">
+                            <img src="pictures/github.png" id="social">
+                            <p>Zelytra</p>
+                        </a>
+                        <a href="https://discord.com/channels/@me" target="_blank">
+                            <img src="pictures/discord.png" id="social">
+                            <p>Zelytra#3667</p>
+                        </a>
+                    </div>
                 </div>
             </div>
-            <div id="right-side">
-                <div id="description">
+            <div id="middle-side">
+                <div id="item">
                     <h1>Un développeur passionné</h1>
                     <svg>
                         <rect />
                     </svg>
-                    <p>Diplômé de l’IUT de Cachan en Génie Electrique et Informatique Industriel (promotion 2020) et
-                        actuellement en école d’ingénieur à l’ESIEA spécialité Système Embarqué. Développeur et
-                        bricoleur
-                        par passion, j’ai appris la grande majorité des langages de programmation par moi-même grâce à
-                        Internet !</p>
+                    <p>Diplômé de l’IUT de Cachan en Génie Electrique et Informatique Industriel (promotion 2020) et actuellement en école d’ingénieur à l’ESIEA spécialité Système Embarqué. Développeur et bricoleur.
+                    </p>
+                </div>
+
+                <div id="item">
+                    <h1>Services</h1>
+                    <svg>
+                        <rect/>
+                    </svg>
+                    <p>Je propose un service de développement de plugin Minecraft (Java Edition): </p>
+                    <p>• <b>Small Plugin</b> : Plugin unique, devis allant de 5 à 20 euros selon sa complexité
+                    </p>
+                    <p>• <b>Core Plugin</b> : Plugin gérant l'entièreté d'un serveur, regroupant toutes les fonctionnalités demandées dans un seul et même plugin (devis dépendant de la complexité de la tâche)
+                    </p>
                 </div>
 
                 <div id="project">
-                    <div id="description">
+                    <div id="item">
                         <h1>Projets</h1>
                         <svg>
                             <rect />
                         </svg>
                     </div>
+                    <div id="list">
+                        <div id="itemList">
+                            <div id="itemProject">
+                                <a href="https://github.com/zelytra/Histeria" target="_blank">
+                                    <div class="title">
+                                        <h2>Histeria Minecraft plugin</h2>
+                                    </div>
+                                    <div id="projectCore">
+                                        <div class="picture">
+                                            <img src="pictures/java2.png">
+                                        </div>
+                                        <p>Réalisation d'un core pour un serveur Minecraft PVP-Faction/Vanilla-Moddé contenant:<br> Shop, Market, Synchronisation d'inventaire, Economie, Item moddé, Home, Tpa, Hguard...
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div id="itemProject">
+                                <a href="https://github.com/zelytra/Zelytra-Website" target="_blank">
+                                    <div class="title">
+                                        <h2>Zelytra Website</h2>
+                                    </div>
+                                    <div id="projectCore">
+                                        <div class="picture">
+                                            <img src="pictures/html.png">
+                                        </div>
+                                        <p>Conception d'un site Internet dans le but de créer un portefolio.</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div id="itemProject">
+                                <a href="https://astrozelytra.fr" target="_blank">
+                                    <div class="title">
+                                        <h2>AstroZelytra Website</h2>
+                                    </div>
+                                    <div id="projectCore">
+                                        <div class="picture">
+                                            <img src="pictures/html.png">
+                                        </div>
+                                        <p>Conception d'un site Internet dans le simple but d'apprendre à coder en html/css et un portefolio.</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div id="itemProject">
+                                <a href="https://github.com/zelytra/MapLoader" target="_blank">
+                                    <div class="title">
+                                        <h2>MapLoader</h2>
+                                    </div>
+                                    <div id="projectCore">
+                                        <div class="picture">
+                                            <img src="pictures/java2.png">
+                                        </div>
+                                        <p>Conception d'un plugin Minecraft 1.16.X qui permet la prégéneration de map sous Spigot.</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div id="itemProject">
+                                <a href="https://github.com/zelytra/BasicCommands" target="_blank">
+                                    <div class="title">
+                                        <h2>BasicCommands</h2>
+                                    </div>
+                                    <div id="projectCore">
+                                        <div class="picture">
+                                            <img src="pictures/java2.png">
+                                        </div>
+                                        <p>Conception d'un plugin Minecraft 1.16.X qui ajoute toutes les commandes dites "basiques" d'un serveur Minecraft. Tels que: home, tpa, spawn...</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div id="itemProject">
+                                <a href="https://github.com/zelytra/PlayerSpeed" target="_blank">
+                                    <div class="title">
+                                        <h2>PlayerSpeed</h2>
+                                    </div>
+                                    <div id="projectCore">
+                                        <div class="picture">
+                                            <img src="pictures/java2.png">
+                                        </div>
+                                        <p>Conception d'un plugin Minecraft 1.16.X qui ajoute une commande permettant au joueur de choisir sa vitesse de fly.</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div id="itemProject">
+                                <a href="https://github.com/zelytra/IUTRobotique" target="_blank">
+                                    <div class="title">
+                                        <h2>IUTRobotique</h2>
+                                    </div>
+                                    <div id="projectCore">
+                                        <div class="picture">
+                                            <img src="pictures/sw.png">
+                                        </div>
+                                        <p>Modélisation 3D d'une sctructure robotique pour la coupe de France de robotique.
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div id="itemProject">
+                                <a href="https://github.com/zelytra/BallLauncher" target="_blank">
+                                    <div class="title">
+                                        <h2>BallLauncher</h2>
+                                    </div>
+                                    <div id="projectCore">
+                                        <div class="picture">
+                                            <img src="pictures/c.png">
+                                        </div>
+                                        <p>Dévelopement d'un lanceur de balle à inclinaison réglable. Asservissement de moteur et de verrin.</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div id="itemProject">
+                                <a href="https://github.com/zelytra/Gyropode" target="_blank">
+                                    <div class="title">
+                                        <h2>Gyropode</h2>
+                                    </div>
+                                    <div id="projectCore">
+                                        <div class="picture">
+                                            <img src="pictures/c.png">
+                                        </div>
+                                        <p>Dévelopement d'une structure en bois, de cartes électroniques et d'un programme dans le but de réaliser un gyropode controllé en Bluetooth par smartphone.
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div id="itemProject">
+                                <a href="https://github.com/zelytra/Pacman-VBA" target="_blank">
+                                    <div class="title">
+                                        <h2>Pacman</h2>
+                                    </div>
+                                    <div id="projectCore">
+                                        <div class="picture">
+                                            <img src="pictures/vba.webp">
+                                        </div>
+                                        <p>Dévelopement du jeu Pacman sur Excel dans le but d'apprendre le VBA.</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
 
                 </div>
+            </div>
+            <div id="right-side">
             </div>
         </main>
 
         <footer>
-
+            <div id="mention">
+                <h2>Made on Mars by human.</h2>
+            </div>
+            <div id="social">
+                <div id="SBlock">
+                    <a href="https://oui.fr">
+                        <img src="pictures/discord.png">
+                    </a>
+                </div>
+                <div id="SBlock">
+                    <a href="https://oui.fr">
+                        <img src="pictures/github.png">
+                    </a>
+                </div>
+            </div>
         </footer>
     </div>
 </body>
