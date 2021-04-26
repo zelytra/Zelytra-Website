@@ -60,7 +60,7 @@ img[alt*="logo_header"] {
 }
 
 img[alt*="logo_header_center"] {
-    width: 50px;
+    width: 300px;
     margin-right: 100px;
     margin-left: 100px;
     border-radius: 3px;
@@ -71,7 +71,7 @@ img[alt*="logo_header_center"] {
 
 
 /*
-.wrapper {       
+.wrapper {
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -122,27 +122,33 @@ main #left-side {
     background-repeat: no-repeat;
 }
 
-#profil #social {
+#profile img[alt*="social"] {
     width: 60px;
-    display: flex;
-    flex-direction: row;
     margin-top: 40px;
 }
 
-#social a {
+.social{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#profile a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-right: 30px;
     text-decoration: none;
+    flex: 1;
+    margin-top: 15px;
+    justify-content: space-between;
 }
 
-#profil #profile_logo {
+#profile img[alt*="profile_logo"] {
     width: 200px;
     margin-top: 10px;
 }
 
-#profil h1 {
+#profile h1 {
     text-align: center;
 }
 
@@ -155,7 +161,7 @@ main #middle-side {
     flex-direction: column;
 }
 
-#middle-side #item {
+#middle-side .item {
     margin-top: 25px;
 }
 
@@ -176,26 +182,26 @@ main #middle-side {
     font-size: 25px;
 }
 
-#projectCore {
+.projectCore {
     margin-left: 5px;
     display: flex;
     flex-direction: row;
 }
 
-#itemProject {
+.itemProject {
     background-color: #363333;
     border-radius: 15px;
     overflow: hidden;
     margin-top: 15px;
 }
 
-#projectCore img {
+.projectCore img {
     margin-top: 10px;
     width: 150px;
     border-radius: 15px;
 }
 
-#projectCore p {
+.projectCore p {
     margin-top: 10px;
     margin-left: 10px;
     margin-right: 10px;
