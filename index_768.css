@@ -1,0 +1,408 @@
+header {
+    background-image: url('img/wave_dark.svg'), url('img/wave.svg'), url('img/wave_light.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+
+}
+
+
+
+header .navigation_top {
+    display: flex;
+    padding-top: 5px;
+    align-items: center;
+    justify-content: space-around;
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    transition-duration: 500ms;
+
+}
+
+header .navigation_top a {
+    font-family: Poppins;
+    color: white;
+    font-size: 20px;
+    line-height: 45px;
+    text-align: center;
+    transition-duration: 500ms;
+}
+
+header .navigation_top a:hover {
+    color: #1a1a1a;
+    transition-duration: 250ms;
+}
+
+header .navigation_top img {
+    width: 80px;
+    height: 80px;
+    transition-duration: 500ms;
+}
+
+
+header #navigationWrapper.navigation_sticky {
+    width: 100%;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    position: fixed;
+    top: 0px;
+    background-color: white;
+    height: 80px;
+    transition-property: background-color;
+    transition-duration: 500ms;
+    z-index: 1030;
+}
+
+header .navigation_sticky {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    transition-duration: 500ms;
+
+}
+
+header .navigation_sticky a {
+    font-family: Poppins;
+    color: black;
+    font-size: 20px;
+    line-height: 45px;
+    text-align: center;
+    transition-duration: 500ms;
+}
+
+header .navigation_sticky a:hover {
+    color: #fcc22b;
+    transition-duration: 250ms;
+}
+
+header .navigation_sticky img {
+    width: 75px;
+    height: 75px;
+    transition-duration: 500ms;
+}
+
+main #firstContent {
+    display: flex;
+    flex-direction: row;
+    margin-top: -80px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+main #firstContent .title {
+    width: 60%;
+}
+
+main #firstContent h1 {
+    font-family: Grec;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 100px;
+    line-height: 216px;
+}
+main #firstContent img {
+    width: 250px;
+    height: 250px;
+}
+
+main #firstContent h2 {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+
+    color: #565656;
+}
+
+main #description {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 120px;
+
+}
+
+main #description h2 {
+    font-family: Poppins;
+    text-align: center;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 60px;
+}
+
+main hr {
+    border: 4px solid #FCC22B;
+    border-radius: 18px;
+    width: 220px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #FCC22B;
+    justify-content: center;
+
+}
+
+main .content {
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+main .subContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 75%;
+    margin-right: auto;
+    margin-left: auto;
+    align-items: center;
+}
+
+main .subContent .textContent {
+    overflow: hidden;
+}
+
+main .subContent .textContent.left {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+main .subContent h3 {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 50px;
+    line-height: 65px;
+}
+
+main .subContent p {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 45px;
+    text-align: justify;
+
+    color: #565656;
+}
+
+main #rating {
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+main .ratingContent {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+main .ratingContent .block {
+    width: 300px;
+    height: 150px;
+    background-color: white;
+    border-radius: 25px;
+    justify-content: center;
+
+}
+
+main .block h4 {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 80px;
+
+    color: #FCC22B;
+    text-align: center;
+    height: 50%;
+}
+
+main .block p {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 90px;
+    text-align: center;
+}
+
+main .block img[alt*="src"] {
+    width: 80%;
+    height: auto;
+    display:block;
+    margin: 40px auto auto;
+}
+
+main #openSource {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 50px;
+}
+
+main #openSource p {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 35px;
+    line-height: 67px;
+    text-align: center;
+
+    color: #565656;
+}
+
+main #openSource img {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+main #download {
+    height: 300px;
+}
+
+main #download h2 {
+    padding-top: 25px;
+    font-family: Poppins;
+    text-align: center;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 60px;
+}
+
+main #downloadBlock a {
+    background-color: #FCC22B;
+    border-radius: 62px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 600px;
+    margin: 50px auto;
+    transition-duration: 500ms;
+}
+
+main #downloadBlock p {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 60px;
+    text-align: center;
+    color: white;
+}
+
+#downloadBlock a:hover {
+    width: 700px;
+    transition-duration: 500ms;
+}
+
+
+main #video h2 {
+    padding-top: 25px;
+    font-family: Poppins;
+    text-align: center;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 60px;
+}
+
+main #video iframe {
+    margin-top: 50px;
+    width: 800px;
+    height: 500px;
+
+    position: absolute; /* positions out of the flow, but according to the nearest parent */
+    top: 0;
+    right: 0; /* confuse it i guess */
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+
+#video {
+    position: relative;
+    height: 700px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+footer .footerContent {
+    height: 350px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+footer h3 {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 75px;
+    color: white;
+}
+
+footer img{
+    width: 150px;
+}
+
+footer .leftContent p {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 25px;
+    line-height: 52px;
+    color: white;
+}
+
+footer .leftContent a {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 25px;
+    line-height: 52px;
+    color: white;
+}
+
+footer .rightContent a {
+    display: flex;
+    flex-direction: column;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 67px;
+    color: white;
+    transition-duration: 500ms;
+}
+
+footer a:hover {
+    color: #1a1a1a;
+    transition-duration: 500ms;
+}

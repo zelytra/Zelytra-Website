@@ -1,238 +1,223 @@
 <!DOCTYPE html>
-<html lang="fr">
-
+<html lang="fr" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#4B9EFE">
-    <meta name="description" content="Zelytra website">
-    <meta property="og:url" content="https://zelytra.fr">
-    <meta property="og:image" content="https://zelytra.fr/pictures/favicon.ico">
-    <link rel="stylesheet" href="index.css">
-    <link rel="icon" href="pictures/favicon.ico" />
-    <title>Zelytra</title>
+    <title>Daedalus</title>
+    <meta property="og:site_name" content="Daedalus">
+    <meta property="og:title" content="Daedalus Paper and Spigot Plugin">
+    <meta property="og:type" content="website">
+    <meta property="og:description"
+          content="Daedalus is a project taking you back to Ancient Greece. Four human teams wander the Labyrinth of Daedalus, austere dwelling of the Minotaur and its minions.">
+    <meta property="og:url" content="http://mc-daedalus.com/">
+    <meta property="og:image" content="http://mc-daedalus.com/img/Logo_Daedalus.png">
+
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" media='screen and (min-width: 576px)' href="index_576.css"/>
+    <link rel="stylesheet" media='screen and (min-width: 768px)' href="index_768.css"/>
+    <link rel="stylesheet" media='screen and (min-width: 992px)' href="index_992.css"/>
+    <link rel="stylesheet" media='screen and (min-width: 1600px)' href="index_1200.css"/>
+    <link rel="icon" type="image/png" href="img/Minotaur_Daedalus_blanc.png"/>
+    <script type="text/javascript">
+
+        document.addEventListener("DOMContentLoaded", function () {
+            window.addEventListener('scroll', function () {
+
+                if (window.scrollY > 80) {
+                    document.getElementById('navigation').classList.replace('navigation_top', 'navigation_sticky');
+                    document.getElementById('logoHeader').src = "img/Minotaur_Pixel_Art_noir.png";
+                    document.getElementById('navigationWrapper').classList.replace('navigation_top', 'navigation_sticky');
+                } else {
+                    document.getElementById('navigationWrapper').classList.replace('navigation_sticky', 'navigation_top');
+                    document.getElementById('navigation').classList.replace('navigation_sticky', 'navigation_top');
+                    document.getElementById('logoHeader').src = "img/Minotaur_Daedalus_blanc.png";
+                }
+
+            });
+        });
+    </script>
+
 </head>
-
 <body>
-    <div class="wrapper">
-        <header>
-            <img src="pictures/c.png" alt="logo_header">
-            <img src="pictures/css.png" alt="logo_header">
-            <img src="pictures/html.png" alt="logo_header">
-            <img src="pictures/zelytra.png" alt="logo_header_center">
-            <img src="pictures/java2.png" alt="logo_header">
-            <img src="pictures/javascript.png" alt="logo_header">
-            <img src="pictures/vba.webp" alt="logo_header">
-        </header>
-
-        <main>
-            <div id="left-side">
-                <div id="profile">
-                    <img src="pictures/logo.png" alt="profile_logo" >
-                    <h1>{Zelytra}</h1>
-                    <div class="social">
-                        <a href="https://github.com/zelytra" target="_blank" class="socialLink">
-                            <img src="pictures/github.png" alt="social">
-                            <p>Zelytra</p>
-                        </a>
-                        <a href="https://discord.com/channels/@me" target="_blank">
-                            <img src="pictures/discord.png" alt="social">
-                            <p>Zelytra#3667</p>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div id="middle-side">
-                <div class="item">
-                    <h1>Un développeur passionné</h1>
-                    <svg>
-                        <rect  height="" width=""/>
-                    </svg>
-                    <p>Diplômé de l’IUT de Cachan en Génie Electrique et Informatique Industriel (promotion 2020) et actuellement en école d’ingénieur à l’ESIEA spécialité Système Embarqué.
-                    </p>
-                </div>
-
-                <div class="item">
-                    <h1>Services</h1>
-                    <svg>
-                        <rect height="" width=""/>
-                    </svg>
-                    <p>Je propose un service de développement de plugin Minecraft (Java Edition): </p>
-                    <p>• <b>Small Plugin</b> : Plugin unique, devis allant de 5 à 20 euros selon sa complexité et de son temps de dévelopement
-                    </p>
-                    <p>• <b>Core Plugin</b> : Plugin gérant l'entièreté d'un serveur, regroupant toutes les fonctionnalités demandées dans un seul et même plugin (devis dépendant de la complexité de la tâche)
-                    </p>
-                </div>
-
-                <div id="project">
-                    <div id="item">
-                        <h1>Projets</h1>
-                        <svg>
-                            <rect  height="" width=""/>
-                        </svg>
-                    </div>
-                    <div id="list">
-                        <div id="itemList">
-                            <div class="itemProject">
-                                <a href="https://github.com/zelytra/Histeria" target="_blank">
-                                    <div class="title">
-                                        <h2>Histeria Minecraft plugin</h2>
-                                    </div>
-                                    <div class="projectCore">
-                                        <div class="picture">
-                                            <img src="pictures/java2.png" alt="">
-                                        </div>
-                                        <p>Réalisation d'un core pour un serveur Minecraft PVP-Faction/Vanilla-Moddé contenant:<br> Shop, Market, Synchronisation d'inventaire, Economie, Item moddé, Home, Tpa, Hguard...
-                                        </p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="itemProject">
-                                <a href="https://github.com/zelytra/Zelytra-Website" target="_blank">
-                                    <div class="title">
-                                        <h2>Zelytra Website</h2>
-                                    </div>
-                                    <div class="projectCore">
-                                        <div class="picture">
-                                            <img src="pictures/html.png" alt="">
-                                        </div>
-                                        <p>Conception d'un site Internet dans le but de créer un portefolio.</p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="itemProject">
-                                <a href="https://astrozelytra.fr" target="_blank">
-                                    <div class="title">
-                                        <h2>AstroZelytra Website</h2>
-                                    </div>
-                                    <div class="projectCore">
-                                        <div class="picture">
-                                            <img src="pictures/html.png" alt="">
-                                        </div>
-                                        <p>Conception d'un site Internet dans le simple but d'apprendre à coder en html/css et un portefolio d'astrophoto.</p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="itemProject">
-                                <a href="https://github.com/zelytra/MapLoader" target="_blank">
-                                    <div class="title">
-                                        <h2>MapLoader</h2>
-                                    </div>
-                                    <div class="projectCore">
-                                        <div class="picture">
-                                            <img src="pictures/java2.png" alt="">
-                                        </div>
-                                        <p>Conception d'un plugin Minecraft 1.16.X qui permet la prégéneration de map sous Spigot.</p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div id="itemProject">
-                                <a href="https://github.com/zelytra/BasicCommands" target="_blank">
-                                    <div class="title">
-                                        <h2>BasicCommands</h2>
-                                    </div>
-                                    <div class="projectCore">
-                                        <div class="picture">
-                                            <img src="pictures/java2.png" alt="">
-                                        </div>
-                                        <p>Conception d'un plugin Minecraft 1.16.X qui ajoute toutes les commandes dites "basiques" d'un serveur Minecraft. Tels que: home, tpa, spawn...</p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="itemProject">
-                                <a href="https://github.com/zelytra/PlayerSpeed" target="_blank">
-                                    <div class="title">
-                                        <h2>PlayerSpeed</h2>
-                                    </div>
-                                    <div class="projectCore">
-                                        <div class="picture">
-                                            <img src="pictures/java2.png" alt="">
-                                        </div>
-                                        <p>Conception d'un plugin Minecraft 1.16.X qui ajoute une commande permettant au joueur de choisir sa vitesse de fly.</p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="itemProject">
-                                <a href="https://github.com/zelytra/IUTRobotique" target="_blank">
-                                    <div class="title">
-                                        <h2>IUTRobotique</h2>
-                                    </div>
-                                    <div class="projectCore">
-                                        <div class="picture">
-                                            <img src="pictures/sw.png" alt="">
-                                        </div>
-                                        <p>Modélisation 3D d'une sctructure robotique pour la coupe de France de robotique.
-                                        </p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="itemProject">
-                                <a href="https://github.com/zelytra/BallLauncher" target="_blank">
-                                    <div class="title">
-                                        <h2>BallLauncher</h2>
-                                    </div>
-                                    <div class="projectCore">
-                                        <div class="picture">
-                                            <img src="pictures/c.png" alt="">
-                                        </div>
-                                        <p>Dévelopement d'un lanceur de balle à inclinaison réglable. Asservissement de moteur et de verrin.</p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="itemProject">
-                                <a href="https://github.com/zelytra/Gyropode" target="_blank">
-                                    <div class="title">
-                                        <h2>Gyropode</h2>
-                                    </div>
-                                    <div class="projectCore">
-                                        <div class="picture">
-                                            <img src="pictures/c.png" alt="">
-                                        </div>
-                                        <p>Dévelopement d'une structure en bois, de cartes électroniques et d'un programme dans le but de réaliser un gyropode controllé en Bluetooth par smartphone.
-                                        </p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="itemProject">
-                                <a href="https://github.com/zelytra/Pacman-VBA" target="_blank">
-                                    <div class="title">
-                                        <h2>Pacman</h2>
-                                    </div>
-                                    <div class="projectCore">
-                                        <div class="picture">
-                                            <img src="pictures/vba.webp" alt="">
-                                        </div>
-                                        <p>Dévelopement du jeu Pacman sur Excel dans le but d'apprendre le VBA.</p>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-            <div id="right-side">
-            </div>
-        </main>
-
-        <footer>
-            <div id="social">
-                <div class="SBlock">
-                    <a href="https://oui.fr">
-                        <img src="pictures/discord.png" alt="">
-                    </a>
-                </div>
-                <div class="SBlock">
-                    <a href="https://oui.fr">
-                        <img src="pictures/github.png" alt="">
-                    </a>
-                </div>
-            </div>
-            <div id="mention">
-                <h2>Made by a Human</h2>
-            </div>
-        </footer>
+<header>
+    <div id="navigationWrapper" class="navigation_top">
+        <div id="navigation" class="navigation_top">
+            <a href="#"><img src="img/Minotaur_Daedalus_blanc.png" id="logoHeader" alt="logoHeader"></a>
+            <a href="#description" class="nav-link">Description</a>
+            <a href="#download" class="nav-link">Téléchargement</a>
+            <a href="#video" class="nav-link">Vidéo</a>
+            <a href="http://github.mc-daedalus.com" target="_blank">GitHub</a>
+            <a href="http://wiki.mc-daedalus.com" target="_blank">Wiki</a>
+            <a href="http://discord.mc-daedalus.com" target="_blank">Discord</a>
+        </div>
     </div>
-</body>
 
+
+</header>
+<main>
+    <div id="firstContent">
+        <div class="title">
+            <h1>DAEDALUS</h1>
+            <h2>Un jeu d'exploration et de combat dans un labyrinthe en immersion dans la mythologie grecque</h2>
+        </div>
+        <img src="img/Minotaur_Pixel_Art_noir.png" width="400px" height="400px" alt="logo">
+    </div>
+
+    <div id="description">
+        <h2>Description</h2>
+        <hr>
+        <div class="content">
+            <div class="subContent">
+                <div class="textContent">
+                    <h3>Un labyrinthe généré aléatoirement</h3>
+                    <p>Prenez place dans le labyrinthe de Dédale !
+                        Parmi les murs d'une surface de 1000 blocs carrés, vous trouverez différentes structures
+                        générées aléatoirement pour rendre votre exploration agréable et intéressante !
+                        Bien nombreuses sont celles qui vous attendent, non seulement des mines et des îles de Circé,
+                        mais encore des donjons et des temples. Chaque structure faite à la main sera directement
+                        reconnaissable.
+                        Les temples sont ainsi décorés de manière à rappeler le Dieu auquel son culte est voué. De même,
+                        les donjons, possèdent une tour pour embraser du regard le labyrinthe, et de nombreuses salles
+                        souterraines avec des mobs customs dangereux mais du bon stuff et de la netherite à la clef !
+                        En partant de votre camp de base fixe dans le labyrinthe, un bon sens de l'orientation est
+                        requis parmi les murs générés aléatoirement. Attention à l'équipe du Minotaure, apparaissant au
+                        centre du labyrinthe, qui est dangereuse pour les joueurs spawnant dans ses angles !
+                        Grâce à un algorithme de génération procédurale, chaque partie est unique dans sa génération,
+                        parfois frustrante, parfois chanceuse, et rejouable dès que voulu !
+
+                    </p>
+                </div>
+                <img src="img/maze.jpg" width="600" height="750" style="object-fit: cover">
+            </div>
+        </div>
+        <div class="content" style="background-color: #E5E5E5">
+            <div class="subContent">
+                <img src="img/temple.jpg" width="600" height="750" style="object-fit: cover">
+                <div class="textContent left">
+                    <h3>Des dieux uniques avec de nouvelles mécaniques</h3>
+                    <p>Grâce aux temples, chaque équipe hormis celle du Minotaure peut invoquer un dieu grec parmi les
+                        10 disponibles grâce à un craft custom.
+                        Invoquez alors le dieu de votre choix pour disposer d'un bonus collectif et d'un bonus propre au
+                        dieu pour affronter vos ennemis ! Chaque équipe aura donc un mode de jeu unique centré sur la
+                        divinité grecque choisie pour les combats !
+                        Par exemple, Dionysos inflige nausée aux adversaires et son équipe obtient un bonus aléatoire
+                        (effet de potion) pour décimer ses adversaires ! Ou encore Poséidon fera pleuvoir des tridents
+                        sur ses ennemis, et Zeus de puissants éclairs !
+                        Néanmoins, il vous faudra vaincre le féroce gardien du temple pour accéder à ce pouvoir.
+                        Une fois le dieu invoqué, vous pouvez être localisés par les autres équipes via le "divine
+                        tracker", item custom permettant initialement de pointer vers les temples.
+                        Ces dieux vous aideront à combattre la puissante équipe du Minotaure, "divinité" présente
+                        d'entrée de jeu, redoutable grâce à sa résistance ou encore sa charge contre les ennemis !</p>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="subContent">
+                <div class="textContent">
+                    <h3>Une survie différente des modes de jeu habituels</h3>
+                    <p>Finie la survie minage sans trouver de cavernes !
+                        Grâce à des loot tables propres à chaque structure, vous trouverez de quoi vous équiper pour
+                        démarrer efficacement votre survie.
+                        Puis trois mines à ciel ouvert avec respawn de minerais vous attendent proches de votre base,
+                        ainsi qu'une île de Circé qui vous fournira de quoi vous sustenter (pauvres marins d'Ulysse !).
+                        Dans le labyrinthe, de nombreux mobs hostiles rodent, mais les plus terribles sont ceux des
+                        donjons !
+                        Sur 4 étages, 4 niveaux de mobs customisés de plus en plus féroces vous attendent, avec bon
+                        stuff, xp et netherite à la clef !
+                        En bref, Daedalus propose un départ rapide et équilibré puis une exploration rentable pour
+                        forger vos meilleures armes !</p>
+                </div>
+                <img src="img/dungeon.jpg" width="600" height="750" style="object-fit: cover">
+            </div>
+        </div>
+
+    </div>
+
+    <div id="rating" style="background-color: #E5E5E5">
+        <div class="ratingContent">
+            <div class="block">
+                <h4>32</h4>
+                <p>Contributeurs</p>
+            </div>
+            <div class="block">
+                <img src="img/rating.png" width="420px" height="80px" alt="src">
+                <p>Vote Spigot</p>
+            </div>
+            <div class="block">
+                <h4>110</h4>
+                <p>Membres</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="openSource">
+        <img src="img/github.svg" width="200px">
+        <p>Daedalus est un projet open-source et communautaire, afin que tout le monde puisse jouer dessus et proposer
+            publiquement des améliorations.</p>
+    </div>
+
+    <div id="download" style="background-color: #E5E5E5">
+        <h2>Téléchargement</h2>
+        <hr>
+        <div id="downloadBlock">
+            <a href="https://github.com/zelytra/Daedalus/releases/download/0.8/Daedalus-1.0.jar">
+                <p>Daedalus-0.8.java</p>
+                <img src="img/download.svg" width="110px">
+            </a>
+        </div>
+    </div>
+    <div id="video">
+        <h2>Vidéo</h2>
+        <hr>
+        <div class="videoBlock">
+            <iframe width="2032" height="879" src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+        </div>
+    </div>
+
+</main>
+<footer>
+    <div class="upperColor" style="height: 51px;width: 100%;background-color: #FFD23F"></div>
+
+    <div class="footerContent" style="background-color: #FCC22B">
+        <div class="leftContent">
+            <h3>Créateurs</h3>
+            <a href="http://zelytra.fr" target="_blank">Zelytra</a>
+            <p>Spirit</p>
+            <p>Ichabodt</p>
+        </div>
+        <a href="#"><img src="img/Minotaur_Daedalus_blanc.png" width="295px"></a>
+        <div class="rightContent"></a>
+            <a href="http://discord.mc-daedalus.com" target="_blank">Discord</a>
+            <a href="http://spigot.mc-daedalus.com" target="_blank">Spigot</a>
+            <a href="http://github.mc-daedalus.com" target="_blank">GitHub</a>
+            <a href="http://youtube.mc-daedalus.com" target="_blank">Youtube</a>
+        </div>
+    </div>
+    <div class="downColor" style="height: 51px;width: 100%;background-color: #FAB51A"></div>
+</footer>
+</body>
 </html>
+
+
+<!-- Partie avis en attente
+
+<h2>Avis</h2>
+<hr>
+<div id="avisContainer">
+    <p class="arrow"><</p>
+    <div class="block">
+        <div class="title">
+            <h5>Zelytra / Developer</h5>
+            <img src="img/quote.png"width="65px" height="65px">
+        </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+            et dolore magna aliqua. Mattis vulputate enim nulla aliquet porttitor lacus. </p>
+    </div>
+    <p class="arrow">></p>
+</div>
+<div id="avisBar">
+
+</div>
+--->
