@@ -2,21 +2,18 @@
 <html lang="fr" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
-    <title>Daedalus</title>
-    <meta property="og:site_name" content="Daedalus">
-    <meta property="og:title" content="Daedalus Paper and Spigot Plugin">
+    <title>Zelytra - Developer</title>
+    <meta property="og:site_name" content="Zelytra">
+    <meta property="og:title" content="Zelytra - Developer">
     <meta property="og:type" content="website">
     <meta property="og:description"
-          content="Daedalus is a project taking you back to Ancient Greece. Four human teams wander the Labyrinth of Daedalus, austere dwelling of the Minotaur and its minions.">
-    <meta property="og:url" content="http://mc-daedalus.com/">
-    <meta property="og:image" content="http://mc-daedalus.com/img/Logo_Daedalus.png">
+          content="Futur engineer in software developement">
+    <meta property="og:url" content="http://zelytra.fr/">
+    <meta property="og:image" content="http://zelytra.fr/img/logo.svg">
 
     <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" media='screen and (min-width: 576px)' href="index_576.css"/>
-    <link rel="stylesheet" media='screen and (min-width: 768px)' href="index_768.css"/>
-    <link rel="stylesheet" media='screen and (min-width: 992px)' href="index_992.css"/>
-    <link rel="stylesheet" media='screen and (min-width: 1600px)' href="index_1200.css"/>
-    <link rel="icon" type="image/png" href="img/Minotaur_Daedalus_blanc.png"/>
+    <link rel="stylesheet" href="index_1200.css"/>
+    <link rel="icon" type="image/png" href="img/logo.svg"/>
     <script type="text/javascript">
 
         document.addEventListener("DOMContentLoaded", function () {
@@ -24,12 +21,12 @@
 
                 if (window.scrollY > 80) {
                     document.getElementById('navigation').classList.replace('navigation_top', 'navigation_sticky');
-                    document.getElementById('logoHeader').src = "img/Minotaur_Pixel_Art_noir.png";
+                    document.getElementById('logoHeader').src = "img/logo_noir.svg";
                     document.getElementById('navigationWrapper').classList.replace('navigation_top', 'navigation_sticky');
                 } else {
                     document.getElementById('navigationWrapper').classList.replace('navigation_sticky', 'navigation_top');
                     document.getElementById('navigation').classList.replace('navigation_sticky', 'navigation_top');
-                    document.getElementById('logoHeader').src = "img/Minotaur_Daedalus_blanc.png";
+                    document.getElementById('logoHeader').src = "img/logo.svg";
                 }
 
             });
@@ -41,13 +38,14 @@
 <header>
     <div id="navigationWrapper" class="navigation_top">
         <div id="navigation" class="navigation_top">
-            <a href="#"><img src="img/Minotaur_Daedalus_blanc.png" id="logoHeader" alt="logoHeader"></a>
-            <a href="#description" class="nav-link">Description</a>
-            <a href="#download" class="nav-link">Téléchargement</a>
-            <a href="#video" class="nav-link">Vidéo</a>
+            <a href="#"><img src="img/logo.svg" id="logoHeader" alt="Zelytra"></a>
+            <a href="#presentation" class="nav-link">Presentation</a>
+            <a href="#projects" class="nav-link">Projects</a>
+            <a href="#service" class="nav-link">Service</a>
+            <a href="#about" class="nav-link">About me</a>
+            <a href="#social" class="nav-link">Social</a>
             <a href="http://github.mc-daedalus.com" target="_blank">GitHub</a>
-            <a href="http://wiki.mc-daedalus.com" target="_blank">Wiki</a>
-            <a href="http://discord.mc-daedalus.com" target="_blank">Discord</a>
+
         </div>
     </div>
 
@@ -56,125 +54,25 @@
 <main>
     <div id="firstContent">
         <div class="title">
-            <h1>DAEDALUS</h1>
-            <h2>Un jeu d'exploration et de combat dans un labyrinthe en immersion dans la mythologie grecque</h2>
+            <img src="img/logo_full.svg">
+            <h2>Some kind of a developer...</h2>
         </div>
-        <img src="img/Minotaur_Pixel_Art_noir.png" width="400px" height="400px" alt="logo">
     </div>
 
     <div id="description">
         <h2>Description</h2>
         <hr>
-        <div class="content">
-            <div class="subContent">
-                <div class="textContent">
-                    <h3>Un labyrinthe généré aléatoirement</h3>
-                    <p>Prenez place dans le labyrinthe de Dédale !
-                        Parmi les murs d'une surface de 1000 blocs carrés, vous trouverez différentes structures
-                        générées aléatoirement pour rendre votre exploration agréable et intéressante !
-                        Bien nombreuses sont celles qui vous attendent, non seulement des mines et des îles de Circé,
-                        mais encore des donjons et des temples. Chaque structure faite à la main sera directement
-                        reconnaissable.
-                        Les temples sont ainsi décorés de manière à rappeler le Dieu auquel son culte est voué. De même,
-                        les donjons, possèdent une tour pour embraser du regard le labyrinthe, et de nombreuses salles
-                        souterraines avec des mobs customs dangereux mais du bon stuff et de la netherite à la clef !
-                        En partant de votre camp de base fixe dans le labyrinthe, un bon sens de l'orientation est
-                        requis parmi les murs générés aléatoirement. Attention à l'équipe du Minotaure, apparaissant au
-                        centre du labyrinthe, qui est dangereuse pour les joueurs spawnant dans ses angles !
-                        Grâce à un algorithme de génération procédurale, chaque partie est unique dans sa génération,
-                        parfois frustrante, parfois chanceuse, et rejouable dès que voulu !
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+            labore et dolore magna aliqua. Enim lobortis scelerisque fermentum dui faucibus in. Ac tortor
+            dignissim convallis aenean et tortor at. Dolor sit amet consectetur adipiscing.
+        </p>
+    </div>
 
-                    </p>
-                </div>
-                <img src="img/maze.jpg" width="600" height="750" style="object-fit: cover">
-            </div>
-        </div>
-        <div class="content" style="background-color: #E5E5E5">
-            <div class="subContent">
-                <img src="img/temple.jpg" width="600" height="750" style="object-fit: cover">
-                <div class="textContent left">
-                    <h3>Des dieux uniques avec de nouvelles mécaniques</h3>
-                    <p>Grâce aux temples, chaque équipe hormis celle du Minotaure peut invoquer un dieu grec parmi les
-                        10 disponibles grâce à un craft custom.
-                        Invoquez alors le dieu de votre choix pour disposer d'un bonus collectif et d'un bonus propre au
-                        dieu pour affronter vos ennemis ! Chaque équipe aura donc un mode de jeu unique centré sur la
-                        divinité grecque choisie pour les combats !
-                        Par exemple, Dionysos inflige nausée aux adversaires et son équipe obtient un bonus aléatoire
-                        (effet de potion) pour décimer ses adversaires ! Ou encore Poséidon fera pleuvoir des tridents
-                        sur ses ennemis, et Zeus de puissants éclairs !
-                        Néanmoins, il vous faudra vaincre le féroce gardien du temple pour accéder à ce pouvoir.
-                        Une fois le dieu invoqué, vous pouvez être localisés par les autres équipes via le "divine
-                        tracker", item custom permettant initialement de pointer vers les temples.
-                        Ces dieux vous aideront à combattre la puissante équipe du Minotaure, "divinité" présente
-                        d'entrée de jeu, redoutable grâce à sa résistance ou encore sa charge contre les ennemis !</p>
-                </div>
-            </div>
-        </div>
-        <div class="content">
-            <div class="subContent">
-                <div class="textContent">
-                    <h3>Une survie différente des modes de jeu habituels</h3>
-                    <p>Finie la survie minage sans trouver de cavernes !
-                        Grâce à des loot tables propres à chaque structure, vous trouverez de quoi vous équiper pour
-                        démarrer efficacement votre survie.
-                        Puis trois mines à ciel ouvert avec respawn de minerais vous attendent proches de votre base,
-                        ainsi qu'une île de Circé qui vous fournira de quoi vous sustenter (pauvres marins d'Ulysse !).
-                        Dans le labyrinthe, de nombreux mobs hostiles rodent, mais les plus terribles sont ceux des
-                        donjons !
-                        Sur 4 étages, 4 niveaux de mobs customisés de plus en plus féroces vous attendent, avec bon
-                        stuff, xp et netherite à la clef !
-                        En bref, Daedalus propose un départ rapide et équilibré puis une exploration rentable pour
-                        forger vos meilleures armes !</p>
-                </div>
-                <img src="img/dungeon.jpg" width="600" height="750" style="object-fit: cover">
-            </div>
-        </div>
+
+
 
     </div>
 
-    <div id="rating" style="background-color: #E5E5E5">
-        <div class="ratingContent">
-            <div class="block">
-                <h4>32</h4>
-                <p>Contributeurs</p>
-            </div>
-            <div class="block">
-                <img src="img/rating.png" width="420px" height="80px" alt="src">
-                <p>Vote Spigot</p>
-            </div>
-            <div class="block">
-                <h4>110</h4>
-                <p>Membres</p>
-            </div>
-        </div>
-    </div>
-
-    <div id="openSource">
-        <img src="img/github.svg" width="200px">
-        <p>Daedalus est un projet open-source et communautaire, afin que tout le monde puisse jouer dessus et proposer
-            publiquement des améliorations.</p>
-    </div>
-
-    <div id="download" style="background-color: #E5E5E5">
-        <h2>Téléchargement</h2>
-        <hr>
-        <div id="downloadBlock">
-            <a href="https://github.com/zelytra/Daedalus/releases/download/0.8/Daedalus-1.0.jar">
-                <p>Daedalus-0.8.java</p>
-                <img src="img/download.svg" width="110px">
-            </a>
-        </div>
-    </div>
-    <div id="video">
-        <h2>Vidéo</h2>
-        <hr>
-        <div class="videoBlock">
-            <iframe width="2032" height="879" src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-        </div>
-    </div>
 
 </main>
 <footer>
@@ -200,24 +98,3 @@
 </body>
 </html>
 
-
-<!-- Partie avis en attente
-
-<h2>Avis</h2>
-<hr>
-<div id="avisContainer">
-    <p class="arrow"><</p>
-    <div class="block">
-        <div class="title">
-            <h5>Zelytra / Developer</h5>
-            <img src="img/quote.png"width="65px" height="65px">
-        </div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-            et dolore magna aliqua. Mattis vulputate enim nulla aliquet porttitor lacus. </p>
-    </div>
-    <p class="arrow">></p>
-</div>
-<div id="avisBar">
-
-</div>
---->
