@@ -107,7 +107,7 @@ main #firstContent h2 {
     color: #565656;
 }
 
-main #description {
+main #presentation {
     width: 100%;
     height: auto;
     display: flex;
@@ -116,18 +116,19 @@ main #description {
     margin-top: 120px;
 
 }
-main #description p {
+
+main #presentation p {
     width: 75%;
     font-family: Poppins;
     font-style: normal;
     font-weight: normal;
     font-size: 30px;
     text-align: justify;
-    margin:  15px auto;
+    margin: 15px auto;
 
 }
 
-main #description h2 {
+main #presentation h2 {
     font-family: Poppins;
     text-align: center;
     font-style: normal;
@@ -147,136 +148,16 @@ main hr {
 
 }
 
-main .content {
+main #projects {
     width: 100%;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    padding-top: 25px;
-    padding-bottom: 25px;
-}
-
-main .subContent {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 75%;
-    margin-right: auto;
-    margin-left: auto;
-    align-items: flex-start;
-}
-
-main .subContent .textContent {
-    margin-right: 150px;
-    overflow: hidden;
-}
-
-main .subContent .textContent.left{
-    margin-left: 100px;
-    margin-right: 0px;
-
-}
-
-main .subContent h3 {
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 50px;
-    line-height: 65px;
-}
-
-main .subContent p {
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 20px;
-    line-height: 45px;
-    text-align: justify;
-
-    color: #565656;
-}
-
-main #rating {
-    width: 100%;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    padding-top: 25px;
-    padding-bottom: 25px;
-}
-
-main .ratingContent {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-
-}
-
-main .ratingContent .block {
-    width: 500px;
-    height: 250px;
-    background-color: white;
-    border-radius: 34px;
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
-
-}
-
-main .block h4 {
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 115px;
-    color: #FCC22B;
-    text-align: center;
-    height: 50%;
-}
-
-main .block p {
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 50px;
-    line-height: 90px;
-    text-align: center;
-}
-
-main .block img[alt*="src"] {
-    display:block;
-    margin: 40px auto auto;
-}
-
-main #openSource {
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 80%;
-    margin-right: auto;
-    margin-left: auto;
-    margin-bottom: 50px;
+    margin-top: 120px;
 }
 
-main #openSource p {
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 45px;
-    line-height: 67px;
-    text-align: center;
-
-    color: #565656;
-}
-
-main #openSource img {
-    margin-right: auto;
-    margin-left: auto;
-}
-
-main #download {
-    height: 300px;
-}
-
-main #download h2 {
-    padding-top: 25px;
+main #projects h2 {
     font-family: Poppins;
     text-align: center;
     font-style: normal;
@@ -285,60 +166,83 @@ main #download h2 {
     line-height: 60px;
 }
 
-main #downloadBlock a {
-    background-color: #FCC22B;
-    border-radius: 62px;
+main #projects .projectWrapper {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    width: 600px;
+    width: 70%;
     margin: 50px auto;
-    transition-duration: 500ms;
 }
 
-main #downloadBlock p {
-    font-family: Poppins;
+main #projects img[alt*="projectImage"] {
+    height: 600px;
+    width: 500px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+main #projects h3 {
+    font-size: 40px;
+    margin: auto 25px;
+
+}
+
+main #projects p {
+    font-size: 30px;
     font-style: normal;
     font-weight: normal;
-    font-size: 40px;
-    line-height: 60px;
-    text-align: center;
+    text-align: justify;
+    margin: auto 25px;
+}
+
+main #projects .projectsContent {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+main #projects .projectsDetail {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    height: auto;
+}
+
+main #projects .lang {
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 250px;
+    height: 100%;
+    margin-right: 25px;
+}
+
+main #projects .projectsDetail img {
+    width: 42px;
+    transition-delay: 1ms;
+}
+
+main #projects .projectsDetail img:hover {
+    width: 55px;
+    transition-delay: 1ms;
+}
+
+main #projects .projectsDetail p {
+    background-color: #4E2AC8;
+    padding: 5px 100px 5px 20px;
+    height: auto;
+    border-radius: 100px;
     color: white;
+
 }
 
-#downloadBlock a:hover {
-    width: 700px;
-    transition-duration: 500ms;
-}
+main #projects .projectsDetail p:hover {
+    background-color: #752AC8;
+    padding: 5px 100px 5px 100px;
+    border-radius: 100px;
+    color: white;
 
-
-main #video h2 {
-    padding-top: 25px;
-    font-family: Poppins;
-    text-align: center;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 40px;
-    line-height: 60px;
-}
-
-main #video iframe {
-    margin-top: 50px;
-    width: 800px;
-    height: 500px;
-
-    position: absolute; /* positions out of the flow, but according to the nearest parent */
-    top: 0;
-    right: 0; /* confuse it i guess */
-    bottom: 0;
-    left: 0;
-    margin: auto;
-}
-
-#video {
-    position: relative;
-    height: 700px;
 }
 
 footer {
