@@ -41,6 +41,7 @@
     -o-transition: all 1s ease;
     transition: all 1s ease;
 
+
 }
 
 
@@ -67,12 +68,12 @@ body.dark-theme {
     height: 100%;
     background-color: #323232;
 
-    --backGround-color: white;
-    --secondary-background-color: #ececec;
-    --text-color-light: #1a1a1a;
-    --text-color-dark: white;
-    --text-header-color: white;
-    --text-sticky-header-color: black;
+    --backGround-color: #323232;
+    --secondary-background-color: #3b3b3b;
+    --text-color-light: white;
+    --text-color-dark: black;
+    --text-header-color: black;
+    --text-sticky-header-color: white;
 
     --main-blue: #4E2AC8;
     --main-light-purple: #9D2AC8;

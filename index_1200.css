@@ -107,7 +107,9 @@ main #presentation {
     margin-top: 120px;
 
 }
-
+main,html,body{
+    background-color: var(--backGround-color);
+}
 main #presentation p {
     width: 75%;
     font-family: Poppins;
@@ -136,6 +138,7 @@ main #projects {
     flex-direction: column;
     justify-content: center;
     margin-top: 120px;
+    background-color: var(--backGround-color);
 }
 
 main h2 {
@@ -236,7 +239,7 @@ main #service{
 
 }
 
-main #service .servicecontent{
+main #service .serviceContent{
     display: flex;
     width: 100%;
     justify-content: space-around;
@@ -359,6 +362,7 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background-color: var(--backGround-color);
 }
 
 footer .footerContent {
@@ -368,6 +372,7 @@ footer .footerContent {
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+    background-color: var(--main-blue);
 
 }
 
