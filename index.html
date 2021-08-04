@@ -32,9 +32,17 @@
             });
         });
     </script>
-
+    <script type="text/javascript">
+        const btn = document.(".btn-toggle");
+        // Listen for a click on the button
+        btn.addEventListener("click", function () {
+            // Then toggle (add/remove) the .dark-theme class to the body
+            alert("trigger");
+            document.body.classList.toggle("dark-theme");
+        });
+    </script>
 </head>
-<body>
+<body class="light-theme||dark-theme">
 <header>
     <div id="navigationWrapper" class="navigation_top">
         <div id="navigation" class="navigation_top">
@@ -45,6 +53,10 @@
             <a href="#about" class="nav-link">About me</a>
             <a href="#social" class="nav-link">Social</a>
             <a href="http://github.mc-daedalus.com" target="_blank">GitHub</a>
+            <label class="switch btn-toggle">
+                <input type="checkbox">
+                <span class="slider round"></span>
+            </label>
 
         </div>
     </div>
@@ -87,9 +99,9 @@
                 <div class="projectsDetail">
                     <p>Show more...</p>
                     <div class="lang">
-                        <img src="img/empty_slot.svg" alt="">
-                        <img src="img/empty_slot.svg" alt="">
-                        <img src="img/empty_slot.svg" alt="">
+                        <img src="img/empty_slot.svg" alt="slot">
+                        <img src="img/empty_slot.svg" alt="slot">
+                        <img src="img/empty_slot.svg" alt="slot">
                         <img src="img/java.svg" alt="java">
                     </div>
                 </div>
@@ -114,9 +126,9 @@
                 <div class="projectsDetail">
                     <p>Show more...</p>
                     <div class="lang">
-                        <img src="img/empty_slot.svg" alt="">
-                        <img src="img/bash.svg" alt="">
-                        <img src="img/sql.svg" alt="">
+                        <img src="img/empty_slot.svg" alt="slot">
+                        <img src="img/bash.svg" alt="slot">
+                        <img src="img/sql.svg" alt="slot">
                         <img src="img/java.svg" alt="java">
                     </div>
                 </div>
@@ -139,9 +151,9 @@
                 <div class="projectsDetail">
                     <p>Show more...</p>
                     <div class="lang">
-                        <img src="img/empty_slot.svg" alt="">
-                        <img src="img/js.svg" alt="">
-                        <img src="img/css.svg" alt="">
+                        <img src="img/empty_slot.svg" alt="slot">
+                        <img src="img/js.svg" alt="slot">
+                        <img src="img/css.svg" alt="slot">
                         <img src="img/html.svg" alt="java">
                     </div>
                 </div>
@@ -166,9 +178,9 @@
                 <div class="projectsDetail">
                     <p>Show more...</p>
                     <div class="lang">
-                        <img src="img/empty_slot.svg" alt="">
-                        <img src="img/empty_slot.svg" alt="">
-                        <img src="img/empty_slot.svg" alt="">
+                        <img src="img/empty_slot.svg" alt="slot">
+                        <img src="img/empty_slot.svg" alt="slot">
+                        <img src="img/empty_slot.svg" alt="slot">
                         <img src="img/c.svg" alt="java">
                     </div>
                 </div>
@@ -190,9 +202,9 @@
                 <div class="projectsDetail">
                     <p>Show more...</p>
                     <div class="lang">
-                        <img src="img/empty_slot.svg" alt="">
-                        <img src="img/empty_slot.svg" alt="">
-                        <img src="img/empty_slot.svg" alt="">
+                        <img src="img/empty_slot.svg" alt="slot">
+                        <img src="img/empty_slot.svg" alt="slot">
+                        <img src="img/empty_slot.svg" alt="slot">
                         <img src="img/Excel.svg" alt="java">
                     </div>
                 </div>
@@ -262,6 +274,7 @@
                     <img src="img/false.svg" alt="">
                     <p>Core</p>
                 </div>
+                <h5>Contact me</h5>
             </div>
 
             <div class="offerType">
@@ -319,6 +332,7 @@
                     <img src="img/false.svg" alt="">
                     <p>Core</p>
                 </div>
+                <h5>Contact me</h5>
             </div>
 
             <div class="offerType">
@@ -376,6 +390,7 @@
                     <img src="img/true.svg" alt="">
                     <p>Core</p>
                 </div>
+                <h5>Contact me</h5>
             </div>
         </div>
 
@@ -404,7 +419,7 @@
                     <img src="img/sql.svg" alt="SQL">
                     <img src="img/Excel.svg" alt="VBA">
                     <img src="img/git.svg" alt="Git">
-                    <img src="img/empty_slot.svg" alt="">
+                    <img src="img/empty_slot.svg" alt="slot">
                 </div>
             </div>
             <div class="iconEnum">
@@ -431,7 +446,7 @@
                     <img src="img/after_effect.svg" alt="Adobe After Effect">
                     <img src="img/illustrator.svg" alt="Adobe Illustrator">
                     <img src="img/audition.svg" alt="Adobe Audition">
-                    <img src="img/empty_slot.svg" alt="">
+                    <img src="img/empty_slot.svg" alt="slot">
                 </div>
             </div>
         </div>

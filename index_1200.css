@@ -22,7 +22,7 @@ header .navigation_top {
 
 header .navigation_top a {
     font-family: Poppins;
-    color: white;
+    color: var(--text-color-dark);
     font-size: 25px;
     text-align: center;
     margin-top: 5px;
@@ -30,7 +30,7 @@ header .navigation_top a {
 }
 
 header .navigation_top a:hover {
-    color: #1a1a1a;
+    color: var(--text-color-light);
     transition-duration: 250ms;
 }
 
@@ -46,7 +46,7 @@ header #navigationWrapper.navigation_sticky {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     position: fixed;
     top: 0px;
-    background-color: white;
+    background-color: var(--backGround-color);
     height: 80px;
     transition-property: background-color;
     transition-duration: 500ms;
@@ -67,7 +67,7 @@ header .navigation_sticky {
 
 header .navigation_sticky a {
     font-family: Poppins;
-    color: black;
+    color: var(--text-color-light);
     font-size: 25px;
     line-height: 45px;
     text-align: center;
@@ -75,7 +75,7 @@ header .navigation_sticky a {
 }
 
 header .navigation_sticky a:hover {
-    color: #fcc22b;
+    color: var(--main-purple);
     transition-duration: 250ms;
 }
 
@@ -120,12 +120,11 @@ main #presentation p {
 }
 
 main hr {
-    border: 4px solid #752AC8;
+    border: 4px solid var(--main-purple);
     border-radius: 18px;
     width: 220px;
     margin-left: auto;
     margin-right: auto;
-    background-color: #FCC22B;
     justify-content: center;
 
 }
@@ -201,6 +200,8 @@ main #projects .lang {
     margin-right: 25px;
 }
 
+
+
 main #projects .projectsDetail img {
     width: 42px;
     transition: all 200ms;
@@ -213,20 +214,19 @@ main #projects .projectsDetail img:hover {
 }
 
 main #projects .projectsDetail p {
-    background-color: #4E2AC8;
+    background-color: var(--main-blue);
     padding: 5px 100px 5px 20px;
     height: auto;
     border-radius: 200px;
-    color: white;
+    color: var(--text-color-dark);
 
 }
 
 main #projects .projectsDetail p:hover {
-    background-color: #752AC8;
+    background-color: var(--main-purple);
     padding: 5px 100px 5px 100px;
     border-radius: 100px;
-    color: white;
-
+    color: var(--text-color-dark);
 }
 
 
@@ -243,7 +243,7 @@ main #service .servicecontent{
 }
 
 main #service .offerType{
-    background-color: #ececec;
+    background-color: var(--secondary-background-color);
     border-radius: 25px;
     padding: 35px;
     margin-top: 20px;
@@ -265,6 +265,24 @@ main #service .offerType h4{
     font-size: 20px;
     text-align: center;
     margin-bottom: 15px;
+}
+
+
+
+main #service .offerType h5{
+    font-size: 25px;
+    text-align: center;
+    padding: 10px;
+    color: var(--text-color-dark);
+    margin-top: 50px;
+    background-color: var(--main-blue);
+    border-radius: 100px;
+    transition: all 200ms;
+}
+
+main #service .offerType h5:hover{
+    transform: scale(1.1);
+    transition: all 200ms;
 }
 
 main #service .offerAdvantage p{
@@ -333,7 +351,7 @@ main #about .iconEnum img[alt*="logo"] {
 
 main #about .iconLogo {
     border-radius: 600px;
-    background-color: #4E2AC8;
+    background-color: var(--main-blue);
 
 }
 
@@ -359,7 +377,7 @@ footer h3 {
     font-weight: 300;
     font-size: 40px;
     line-height: 75px;
-    color: white;
+    color: var(--text-color-dark);
 }
 
 footer .leftContent p {
@@ -368,7 +386,7 @@ footer .leftContent p {
     font-weight: 300;
     font-size: 25px;
     line-height: 52px;
-    color: white;
+    color: var(--text-color-dark);
 }
 
 footer .leftContent a {
@@ -377,7 +395,7 @@ footer .leftContent a {
     font-weight: 300;
     font-size: 25px;
     line-height: 52px;
-    color: white;
+    color: var(--text-color-dark);
 }
 
 footer .rightContent a {
@@ -388,11 +406,11 @@ footer .rightContent a {
     font-weight: normal;
     font-size: 25px;
     line-height: 67px;
-    color: white;
+    color: var(--text-color-dark);
     transition-duration: 500ms;
 }
 
 footer a:hover {
-    color: #1a1a1a;
+    color: var(--text-color-dark);
     transition-duration: 500ms;
 }
