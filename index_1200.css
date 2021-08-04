@@ -159,7 +159,7 @@ main #projects img[alt*="projectImage"] {
     width: 500px;
     object-fit: cover;
     border-radius: 15px;
-    transition: all 0.3s ;
+    transition: all 0.3s;
 }
 
 main #projects h3 {
@@ -203,12 +203,13 @@ main #projects .lang {
 
 main #projects .projectsDetail img {
     width: 42px;
-    transition: all 300ms;
+    transition: all 200ms;
 }
 
 main #projects .projectsDetail img:hover {
-    width: 55px;
-    transition: all 300ms;
+    transform: scale(1.2);
+    z-index: 2;
+    transition: all 200ms;
 }
 
 main #projects .projectsDetail p {
@@ -228,39 +229,63 @@ main #projects .projectsDetail p:hover {
 
 }
 
-main #about .aboutWrapper{
+main #about .aboutWrapper {
+    margin-top: 25px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-main #about{
-    width: 80%;
+main #about {
+    width: 90%;
     margin: 50px auto;
 }
 
-main #about .line{
+main #about .line {
+    align-items: center;
+    margin-bottom: 25px;
+
+}
+
+main #about img {
+    width: 80px;
+    height: 80px;
+    margin: 5px;
+    transition: all 200ms;
+
+}
+
+main #about img[alt!="logo"]:hover {
+    transform: scale(1.2);
+    z-index: 2;
+    transition: all 200ms;
+
+
+}
+
+main #about .iconEnum .iconTitle {
+    margin-bottom: 20px;
+}
+
+main #about .iconEnum {
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 25px ;
-
+    width: 100%;
 }
 
-main #about img{
-    width: 60px;
-    height: 60px;
-
-}
-
-main #about .iconCenter img{
+main #about .iconEnum img[alt*="logo"] {
     width: 300px;
     height: 300px;
     padding: 50px;
-    border-radius: 600px;
-
-    background-color: #efefef;
 }
 
+main #about .iconLogo {
+    border-radius: 600px;
+    background-color: #4E2AC8;
+
+}
 
 footer {
     display: flex;
