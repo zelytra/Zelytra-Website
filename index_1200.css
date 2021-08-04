@@ -229,6 +229,56 @@ main #projects .projectsDetail p:hover {
 
 }
 
+
+main #service{
+    width: 80%;
+    margin: 50px auto;
+
+}
+
+main #service .servicecontent{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+main #service .offerType{
+    background-color: #ececec;
+    border-radius: 25px;
+    padding: 35px;
+    margin-top: 20px;
+}
+
+main #service .offerAdvantage{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+main #service .offerType h3{
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+main #service .offerType h4{
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+main #service .offerAdvantage p{
+    font-size: 25px;
+    text-align: start;
+}
+
+main #service .offerAdvantage img{
+    width: 35px;
+    height: 35px;
+    margin-right: 15px;
+}
+
+
 main #about .aboutWrapper {
     margin-top: 25px;
     display: flex;
@@ -255,7 +305,7 @@ main #about img {
 
 }
 
-main #about img[alt!="logo"]:hover {
+main #about img:hover {
     transform: scale(1.2);
     z-index: 2;
     transition: all 200ms;
