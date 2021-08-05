@@ -251,7 +251,19 @@ main #service{
     width: 80%;
     margin: 50px auto;
     color: var(--text-color-light);
+}
 
+main #service h5{
+    width: auto;
+    margin: 10px auto;
+    text-align: center;
+    font-size: 30px;
+    font-weight: normal;
+}
+
+main #service p{
+    margin-top: 5px;
+    text-align: center;
 }
 
 main #service .serviceContent{
@@ -333,7 +345,7 @@ main #about .line {
 
 }
 
-main #about img {
+main #about img[alt*="langIcon"] {
     width: 80px;
     height: 80px;
     margin: 5px;
@@ -341,7 +353,7 @@ main #about img {
 
 }
 
-main #about img:hover {
+main #about img[alt*="langIcon"]:hover {
     transform: scale(1.2);
     z-index: 2;
     transition: all 200ms;
@@ -400,15 +412,6 @@ footer h3 {
     color: var(--text-color-dark);
 }
 
-footer .leftContent p {
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 25px;
-    line-height: 52px;
-    color: var(--text-color-dark);
-}
-
 footer .leftContent a {
     font-family: Poppins;
     font-style: normal;
@@ -418,7 +421,20 @@ footer .leftContent a {
     color: var(--text-color-dark);
 }
 
+
 footer .rightContent a {
+    display: flex;
+    flex-direction: column;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 67px;
+    color: var(--text-color-dark);
+    transition-duration: 500ms;
+}
+
+footer .leftContent a {
     display: flex;
     flex-direction: column;
     font-family: Poppins;
