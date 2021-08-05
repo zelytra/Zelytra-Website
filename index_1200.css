@@ -96,6 +96,7 @@ main #firstContent {
 
 main #firstContent .title {
     width: 1000px;
+    color: var(--text-color-light);
 }
 
 main #presentation {
@@ -118,6 +119,7 @@ main #presentation p {
     font-size: 30px;
     text-align: justify;
     margin: 15px auto;
+    color: var(--text-color-light);
 
 }
 
@@ -148,6 +150,7 @@ main h2 {
     font-weight: normal;
     font-size: 40px;
     line-height: 60px;
+    color: var(--text-color-light);
 }
 
 main #projects .projectWrapper {
@@ -176,6 +179,7 @@ main #projects p {
     font-weight: normal;
     text-align: justify;
     margin: auto 25px;
+    color: var(--text-color-light);
 }
 
 main #projects .projectsContent {
@@ -183,6 +187,7 @@ main #projects .projectsContent {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    color: var(--text-color-light);
 }
 
 main #projects .projectsDetail {
@@ -191,6 +196,7 @@ main #projects .projectsDetail {
     width: 100%;
     justify-content: space-between;
     height: auto;
+    color: var(--text-color-light);
 }
 
 main #projects .lang {
@@ -221,6 +227,10 @@ main #projects .projectsDetail p {
     padding: 5px 100px 5px 20px;
     height: auto;
     border-radius: 200px;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
     color: var(--text-color-dark);
 
 }
@@ -229,6 +239,10 @@ main #projects .projectsDetail p:hover {
     background-color: var(--main-purple);
     padding: 5px 100px 5px 100px;
     border-radius: 100px;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
     color: var(--text-color-dark);
 }
 
@@ -236,6 +250,7 @@ main #projects .projectsDetail p:hover {
 main #service{
     width: 80%;
     margin: 50px auto;
+    color: var(--text-color-light);
 
 }
 
