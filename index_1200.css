@@ -15,7 +15,7 @@ header .navigation_top {
     justify-content: space-around;
     margin-right: auto;
     margin-left: auto;
-    width: 80%;
+    width: 90%;
     transition-duration: 500ms;
 
 }
@@ -35,8 +35,8 @@ header .navigation_top a:hover {
 }
 
 header .navigation_top img {
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     transition-duration: 500ms;
 }
 
@@ -47,7 +47,7 @@ header #navigationWrapper.navigation_sticky {
     position: fixed;
     top: 0px;
     background-color: var(--backGround-color);
-    height: 80px;
+    height: 60px;
     transition-property: background-color;
     transition-duration: 500ms;
     z-index: 1030;
@@ -62,16 +62,19 @@ header .navigation_sticky {
     margin-right: auto;
     margin-left: auto;
     transition-duration: 500ms;
-
 }
+
 
 header .navigation_sticky a {
     font-family: Poppins;
+    display: flex;
+    align-items: center;
     color: var(--text-color-light);
-    font-size: 25px;
+    font-size: 20px;
     line-height: 45px;
     text-align: center;
     transition-duration: 500ms;
+    align-items: center;
 }
 
 header .navigation_sticky a:hover {
@@ -80,8 +83,8 @@ header .navigation_sticky a:hover {
 }
 
 header .navigation_sticky img {
-    width: 60px;
-    height: 60px;
+    width: 40px;
+    height: 40px;
     transition-duration: 500ms;
 }
 
@@ -116,7 +119,7 @@ main #presentation p {
     font-family: Poppins;
     font-style: normal;
     font-weight: normal;
-    font-size: 30px;
+    font-size: 22px;
     text-align: justify;
     margin: 15px auto;
     color: var(--text-color-light);
@@ -148,7 +151,7 @@ main h2 {
     text-align: center;
     font-style: normal;
     font-weight: normal;
-    font-size: 40px;
+    font-size: 30px;
     line-height: 60px;
     color: var(--text-color-light);
 }
@@ -160,21 +163,21 @@ main #projects .projectWrapper {
 }
 
 main #projects img[alt*="projectImage"] {
-    height: 600px;
-    width: 500px;
+    height: 500px;
+    width: 400px;
     object-fit: cover;
     border-radius: 15px;
     transition: all 0.3s;
 }
 
 main #projects h3 {
-    font-size: 40px;
+    font-size: 30px;
     margin: auto 25px;
 
 }
 
 main #projects p {
-    font-size: 30px;
+    font-size: 20px;
     font-style: normal;
     font-weight: normal;
     text-align: justify;
@@ -257,7 +260,7 @@ main #service h5{
     width: auto;
     margin: 10px auto;
     text-align: center;
-    font-size: 30px;
+    font-size: 20px;
     font-weight: normal;
 }
 
@@ -275,7 +278,7 @@ main #service .serviceContent{
 main #service .offerType{
     background-color: var(--secondary-background-color);
     border-radius: 25px;
-    padding: 35px;
+    padding: 25px;
     margin-top: 20px;
 }
 
@@ -286,13 +289,13 @@ main #service .serviceDetail{
 }
 
 main #service .offerType h3{
-    font-size: 40px;
+    font-size: 30px;
     text-align: center;
     margin-bottom: 5px;
 }
 
 main #service .offerType h4{
-    font-size: 20px;
+    font-size: 15px;
     text-align: center;
     margin-bottom: 15px;
 }
@@ -300,7 +303,7 @@ main #service .offerType h4{
 
 
 main #service .offerType h5{
-    font-size: 25px;
+    font-size: 20px;
     text-align: center;
     padding: 10px;
     color: var(--text-color-dark);
@@ -316,13 +319,13 @@ main #service .offerType h5:hover{
 }
 
 main #service .serviceDetail p{
-    font-size: 25px;
+    font-size: 20px;
     text-align: start;
 }
 
 main #service .serviceDetail img{
-    width: 35px;
-    height: 35px;
+    width: 25px;
+    height: 25px;
     margin-right: 15px;
 }
 
@@ -346,8 +349,8 @@ main #about .line {
 }
 
 main #about img[alt*="langIcon"] {
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     margin: 5px;
     transition: all 200ms;
 
@@ -374,8 +377,8 @@ main #about .iconEnum {
 }
 
 main #about .iconEnum img[alt*="logo"] {
-    width: 300px;
-    height: 300px;
+    width: 150px;
+    height: 150px;
     padding: 50px;
 }
 
