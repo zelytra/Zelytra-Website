@@ -1,12 +1,11 @@
 header {
-    background-image: url('img/wave_dark.svg'), url('img/wave.svg'), url('img/wave_light.svg');
+    background-image: url('img/wave_3.svg'), url('img/wave_2.svg'), url('img/wave_1.svg');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     width: 100%;
-    height: 600px;
+    height: 500px;
 
 }
-
 
 
 header .navigation_top {
@@ -16,28 +15,28 @@ header .navigation_top {
     justify-content: space-around;
     margin-right: auto;
     margin-left: auto;
-    width: 100%;
+    width: 90%;
     transition-duration: 500ms;
 
 }
 
 header .navigation_top a {
     font-family: Poppins;
-    color: white;
+    color: var(--text-color-dark);
     font-size: 20px;
-    line-height: 45px;
     text-align: center;
+    margin-top: 5px;
     transition-duration: 500ms;
 }
 
 header .navigation_top a:hover {
-    color: #1a1a1a;
+    color: var(--text-color-light);
     transition-duration: 250ms;
 }
 
 header .navigation_top img {
-    width: 80px;
-    height: 80px;
+    width: 50px;
+    height: 50px;
     transition-duration: 500ms;
 }
 
@@ -47,8 +46,8 @@ header #navigationWrapper.navigation_sticky {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     position: fixed;
     top: 0px;
-    background-color: white;
-    height: 80px;
+    background-color: var(--backGround-color);
+    height: 60px;
     transition-property: background-color;
     transition-duration: 500ms;
     z-index: 1030;
@@ -59,30 +58,33 @@ header .navigation_sticky {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    width: 90%;
+    width: 80%;
     margin-right: auto;
     margin-left: auto;
     transition-duration: 500ms;
-
 }
+
 
 header .navigation_sticky a {
     font-family: Poppins;
-    color: black;
+    display: flex;
+    align-items: center;
+    color: var(--text-color-light);
     font-size: 20px;
     line-height: 45px;
     text-align: center;
     transition-duration: 500ms;
+    align-items: center;
 }
 
 header .navigation_sticky a:hover {
-    color: #fcc22b;
+    color: var(--main-purple);
     transition-duration: 250ms;
 }
 
 header .navigation_sticky img {
-    width: 75px;
-    height: 75px;
+    width: 40px;
+    height: 40px;
     transition-duration: 500ms;
 }
 
@@ -96,31 +98,11 @@ main #firstContent {
 }
 
 main #firstContent .title {
-    width: 60%;
+    width: 1000px;
+    color: var(--text-color-light);
 }
 
-main #firstContent h1 {
-    font-family: Grec;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 100px;
-    line-height: 216px;
-}
-main #firstContent img {
-    width: 250px;
-    height: 250px;
-}
-
-main #firstContent h2 {
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 30px;
-
-    color: #565656;
-}
-
-main #description {
+main #presentation {
     width: 100%;
     height: auto;
     display: flex;
@@ -129,233 +111,300 @@ main #description {
     margin-top: 120px;
 
 }
-
-main #description h2 {
+main,html,body{
+    background-color: var(--backGround-color);
+}
+main #presentation p {
+    width: 75%;
     font-family: Poppins;
-    text-align: center;
     font-style: normal;
     font-weight: normal;
-    font-size: 40px;
-    line-height: 60px;
+    font-size: 22px;
+    text-align: justify;
+    margin: 15px auto;
+    color: var(--text-color-light);
+
 }
 
 main hr {
-    border: 4px solid #FCC22B;
+    border: 4px solid var(--main-purple);
     border-radius: 18px;
     width: 220px;
     margin-left: auto;
     margin-right: auto;
-    background-color: #FCC22B;
     justify-content: center;
 
 }
 
-main .content {
+main #projects {
     width: 100%;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    padding-top: 25px;
-    padding-bottom: 25px;
-}
-
-main .subContent {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 75%;
-    margin-right: auto;
-    margin-left: auto;
-    align-items: center;
-}
-
-main .subContent .textContent {
-    overflow: hidden;
-}
-
-main .subContent .textContent.left {
-    margin-left: 0px;
-    margin-right: 0px;
-}
-
-main .subContent h3 {
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 50px;
-    line-height: 65px;
-}
-
-main .subContent p {
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 20px;
-    line-height: 45px;
-    text-align: justify;
-
-    color: #565656;
-}
-
-main #rating {
-    width: 100%;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    padding-top: 25px;
-    padding-bottom: 25px;
-}
-
-main .ratingContent {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-
-}
-
-main .ratingContent .block {
-    width: 300px;
-    height: 150px;
-    background-color: white;
-    border-radius: 25px;
-    justify-content: center;
-
-}
-
-main .block h4 {
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 80px;
-
-    color: #FCC22B;
-    text-align: center;
-    height: 50%;
-}
-
-main .block p {
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 25px;
-    line-height: 90px;
-    text-align: center;
-}
-
-main .block img[alt*="src"] {
-    width: 80%;
     height: auto;
-    display:block;
-    margin: 40px auto auto;
-}
-
-main #openSource {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 80%;
-    margin-right: auto;
-    margin-left: auto;
-    margin-bottom: 50px;
+    margin-top: 120px;
+    background-color: var(--backGround-color);
 }
 
-main #openSource p {
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 35px;
-    line-height: 67px;
-    text-align: center;
-
-    color: #565656;
-}
-
-main #openSource img {
-    margin-right: auto;
-    margin-left: auto;
-}
-
-main #download {
-    height: 300px;
-}
-
-main #download h2 {
-    padding-top: 25px;
+main h2 {
     font-family: Poppins;
     text-align: center;
     font-style: normal;
     font-weight: normal;
-    font-size: 40px;
+    font-size: 30px;
     line-height: 60px;
+    color: var(--text-color-light);
 }
 
-main #downloadBlock a {
-    background-color: #FCC22B;
-    border-radius: 62px;
+main #projects .projectWrapper {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: 50px auto;
+}
+
+main #projects img[alt*="projectImage"] {
+    margin-top: 10px;
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    transition: all 0.3s;
+}
+
+main #projects h3 {
+    font-size: 30px;
+    margin: auto 25px;
+
+}
+
+main #projects p {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: normal;
+    text-align: justify;
+    margin: auto 25px;
+    color: var(--text-color-light);
+}
+
+main #projects .projectsContent {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: var(--text-color-light);
+}
+
+main #projects .projectsDetail {
     display: flex;
     flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    height: auto;
+    color: var(--text-color-light);
+}
+
+main #projects .lang {
+    height: auto;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: space-around;
-    width: 600px;
+    width: 250px;
+    height: 100%;
+    margin-right: 25px;
+}
+
+
+
+main #projects .projectsDetail img {
+    width: 42px;
+    transition: all 200ms;
+}
+
+main #projects .projectsDetail img:hover {
+    transform: scale(1.2);
+    z-index: 2;
+    transition: all 200ms;
+}
+
+main #projects .projectsDetail p {
+    background-color: var(--main-blue);
+    padding: 5px 100px 5px 20px;
+    height: auto;
+    border-radius: 200px;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+    color: var(--text-color-dark);
+
+}
+
+main #projects .projectsDetail p:hover {
+    background-color: var(--main-purple);
+    padding: 5px 100px 5px 100px;
+    border-radius: 100px;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+    color: var(--text-color-dark);
+}
+
+
+main #service{
+    width: 80%;
     margin: 50px auto;
-    transition-duration: 500ms;
+    color: var(--text-color-light);
 }
 
-main #downloadBlock p {
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 40px;
-    line-height: 60px;
+main #service h5{
+    width: auto;
+    margin: 10px auto;
     text-align: center;
-    color: white;
-}
-
-#downloadBlock a:hover {
-    width: 700px;
-    transition-duration: 500ms;
-}
-
-
-main #video h2 {
-    padding-top: 25px;
-    font-family: Poppins;
-    text-align: center;
-    font-style: normal;
+    font-size: 20px;
     font-weight: normal;
-    font-size: 40px;
-    line-height: 60px;
 }
 
-main #video iframe {
+main #service p{
+    margin-top: 5px;
+    text-align: center;
+}
+
+main #service .serviceContent{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+main #service .offerType{
+    background-color: var(--secondary-background-color);
+    border-radius: 25px;
+    padding: 25px;
+    margin-top: 20px;
+}
+
+main #service .serviceDetail{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+main #service .offerType h3{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+main #service .offerType h4{
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+
+
+main #service .offerType h5{
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+    color: var(--text-color-dark);
     margin-top: 50px;
-    width: 800px;
-    height: 500px;
-
-    position: absolute; /* positions out of the flow, but according to the nearest parent */
-    top: 0;
-    right: 0; /* confuse it i guess */
-    bottom: 0;
-    left: 0;
-    margin: auto;
+    background-color: var(--main-blue);
+    border-radius: 100px;
+    transition: all 200ms;
 }
 
-#video {
-    position: relative;
-    height: 700px;
+main #service .offerType h5:hover{
+    transform: scale(1.1);
+    transition: all 200ms;
+}
+
+main #service .serviceDetail p{
+    font-size: 20px;
+    text-align: start;
+}
+
+main #service .serviceDetail img{
+    width: 25px;
+    height: 25px;
+    margin-right: 15px;
+}
+
+
+main #about .aboutWrapper {
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main #about {
+    width: 90%;
+    margin: 50px auto;
+}
+
+main #about .line {
+    align-items: center;
+    margin-bottom: 25px;
+
+}
+
+main #about img[alt*="langIcon"] {
+    width: 60px;
+    height: 60px;
+    margin: 5px;
+    transition: all 200ms;
+
+}
+
+main #about img[alt*="langIcon"]:hover {
+    transform: scale(1.2);
+    z-index: 2;
+    transition: all 200ms;
+
+
+}
+
+main #about .iconEnum .iconTitle {
+    margin-bottom: 20px;
+}
+
+main #about .iconEnum {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+main #about .iconEnum img[alt*="logo"] {
+    width: 150px;
+    height: 150px;
+    padding: 50px;
+}
+
+main #about .iconLogo {
+    border-radius: 600px;
+    background-color: var(--main-blue);
+
 }
 
 footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background-color: var(--backGround-color);
 }
 
 footer .footerContent {
-    height: 350px;
+    height: 200px;
     width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+    background-color: var(--main-blue);
 
 }
 
@@ -365,30 +414,17 @@ footer h3 {
     font-weight: 300;
     font-size: 40px;
     line-height: 75px;
-    color: white;
-}
-
-footer img{
-    width: 150px;
-}
-
-footer .leftContent p {
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 25px;
-    line-height: 52px;
-    color: white;
+    color: var(--text-color-dark);
 }
 
 footer .leftContent a {
     font-family: Poppins;
     font-style: normal;
-    font-weight: 300;
-    font-size: 25px;
+    font-size: 15px;
     line-height: 52px;
-    color: white;
+    color: var(--text-color-dark);
 }
+
 
 footer .rightContent a {
     display: flex;
@@ -396,13 +432,25 @@ footer .rightContent a {
     font-family: Poppins;
     font-style: normal;
     font-weight: normal;
-    font-size: 25px;
-    line-height: 67px;
-    color: white;
+    font-size: 15px;
+    line-height: 30px;
+    color: var(--text-color-dark);
+    transition-duration: 500ms;
+}
+
+footer .leftContent a {
+    display: flex;
+    flex-direction: column;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 30px;
+    color: var(--text-color-dark);
     transition-duration: 500ms;
 }
 
 footer a:hover {
-    color: #1a1a1a;
+    color: var(--text-color-dark);
     transition-duration: 500ms;
 }

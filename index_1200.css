@@ -23,7 +23,7 @@ header .navigation_top {
 header .navigation_top a {
     font-family: Poppins;
     color: var(--text-color-dark);
-    font-size: 25px;
+    font-size: 20px;
     text-align: center;
     margin-top: 5px;
     transition-duration: 500ms;
@@ -102,6 +102,10 @@ main #firstContent .title {
     color: var(--text-color-light);
 }
 
+main #firstContent .title img {
+    height: 100%;
+}
+
 main #presentation {
     width: 100%;
     height: auto;
@@ -111,9 +115,11 @@ main #presentation {
     margin-top: 120px;
 
 }
-main,html,body{
+
+main, html, body {
     background-color: var(--backGround-color);
 }
+
 main #presentation p {
     width: 75%;
     font-family: Poppins;
@@ -195,7 +201,6 @@ main #projects .projectsContent {
 
 main #projects .projectsDetail {
     display: flex;
-    flex-direction: row;
     width: 100%;
     justify-content: space-between;
     height: auto;
@@ -211,7 +216,6 @@ main #projects .lang {
     height: 100%;
     margin-right: 25px;
 }
-
 
 
 main #projects .projectsDetail img {
@@ -250,13 +254,13 @@ main #projects .projectsDetail p:hover {
 }
 
 
-main #service{
+main #service {
     width: 80%;
     margin: 50px auto;
     color: var(--text-color-light);
 }
 
-main #service h5{
+main #service h5 {
     width: auto;
     margin: 10px auto;
     text-align: center;
@@ -264,45 +268,44 @@ main #service h5{
     font-weight: normal;
 }
 
-main #service p{
+main #service p {
     margin-top: 5px;
     text-align: center;
 }
 
-main #service .serviceContent{
+main #service .serviceContent {
     display: flex;
     width: 100%;
     justify-content: space-around;
 }
 
-main #service .offerType{
+main #service .offerType {
     background-color: var(--secondary-background-color);
     border-radius: 25px;
     padding: 25px;
     margin-top: 20px;
 }
 
-main #service .serviceDetail{
+main #service .serviceDetail {
     display: flex;
     align-items: center;
     margin-bottom: 15px;
 }
 
-main #service .offerType h3{
+main #service .offerType h3 {
     font-size: 30px;
     text-align: center;
     margin-bottom: 5px;
 }
 
-main #service .offerType h4{
+main #service .offerType h4 {
     font-size: 15px;
     text-align: center;
     margin-bottom: 15px;
 }
 
 
-
-main #service .offerType h5{
+main #service .offerType h5 {
     font-size: 20px;
     text-align: center;
     padding: 10px;
@@ -313,17 +316,17 @@ main #service .offerType h5{
     transition: all 200ms;
 }
 
-main #service .offerType h5:hover{
+main #service .offerType h5:hover {
     transform: scale(1.1);
     transition: all 200ms;
 }
 
-main #service .serviceDetail p{
+main #service .serviceDetail p {
     font-size: 20px;
     text-align: start;
 }
 
-main #service .serviceDetail img{
+main #service .serviceDetail img {
     width: 25px;
     height: 25px;
     margin-right: 15px;
@@ -396,7 +399,7 @@ footer {
 }
 
 footer .footerContent {
-    height: 350px;
+    height: 200px;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -418,8 +421,7 @@ footer h3 {
 footer .leftContent a {
     font-family: Poppins;
     font-style: normal;
-    font-weight: 300;
-    font-size: 25px;
+    font-size: 15px;
     line-height: 52px;
     color: var(--text-color-dark);
 }
@@ -431,8 +433,8 @@ footer .rightContent a {
     font-family: Poppins;
     font-style: normal;
     font-weight: normal;
-    font-size: 25px;
-    line-height: 67px;
+    font-size: 15px;
+    line-height: 30px;
     color: var(--text-color-dark);
     transition-duration: 500ms;
 }
@@ -443,8 +445,8 @@ footer .leftContent a {
     font-family: Poppins;
     font-style: normal;
     font-weight: normal;
-    font-size: 25px;
-    line-height: 67px;
+    font-size: 15px;
+    line-height: 30px;
     color: var(--text-color-dark);
     transition-duration: 500ms;
 }
